@@ -33,7 +33,7 @@ server.route([{
         }
     }
 }]);
-// ///////////////////////////////WP
+// ///////////////////////////////WP///webpack registration should be on last step !!!!
 const wpc = {
     entry: ['babel-polyfill', 'webpack-hot-middleware/client', './app/app.js'],
     output: {
