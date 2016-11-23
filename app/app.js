@@ -1,16 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {CommentBox} from './ComponentBox'
 
-var CommentBox = React.createClass({
-    render() {
-        return (
-            <div>
-                Just a CommentBox
-            </div>
-        );
-    }
-});
+if (module.hot) {
+  module.hot.accept()
+}
+
 ReactDOM.render(
-    <CommentBox />,
-    document.getElementById('content')
-);
+  <CommentBox title='just a title!!!' />,
+  document.getElementById('content')
+)
