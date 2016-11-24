@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
+import {Store} from './Store'
+import reducers from './reducers'
 import {CommentBox} from './ComponentBox'
 
 if (module.hot) {
@@ -7,6 +10,8 @@ if (module.hot) {
 }
 
 ReactDOM.render(
-  <CommentBox title='just a title!!!' />,
+  <Provider store={Store({...reducers})}>
+    <CommentBox title='just a title!' />
+  </Provider>,
   document.getElementById('content')
 )
