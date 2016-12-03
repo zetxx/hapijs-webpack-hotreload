@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
 import {Store} from './Store'
 import reducers from './reducers'
-import {CommentBox} from './ComponentBox'
+import {Main} from './Containers/Main'
 
 if (module.hot) {
   module.hot.accept()
@@ -11,7 +11,7 @@ if (module.hot) {
 
 ReactDOM.render(
   <Provider store={Store({...reducers})}>
-    <CommentBox title='just a title!' />
+    <Main />
   </Provider>,
   document.getElementById('content')
 )

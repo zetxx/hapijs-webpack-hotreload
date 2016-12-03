@@ -1,7 +1,9 @@
 module.exports = {
-  plugins: [
-    require('postcss-smart-import')({ /* ...options */ }),
-    require('precss')({ /* ...options */ }),
-    require('autoprefixer')({ /* ...options */ })
-  ]
+  plugins: {
+    'postcss-cssnext': {
+      browsers: ['ie >= 9', 'last 2 versions']
+    },
+    'postcss-nested': true,
+    'postcss-mixins': true
+  }
 }

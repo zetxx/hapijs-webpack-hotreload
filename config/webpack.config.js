@@ -11,7 +11,7 @@ const wpc = {
     path.join(sourceDir, 'app.js')
   ],
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', '.jsx', '.css']
   },
   output: {
     path: path.join(__dirname, 'src'),
@@ -34,8 +34,8 @@ const wpc = {
     }, {
       test: /\.css$/,
       loaders: [
-        'style-loader',
-        'css-loader?importLoaders=1',
+        'style-loader?sourceMap',
+        'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
         'postcss-loader'
       ]
     }]

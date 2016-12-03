@@ -1,0 +1,14 @@
+.aligner {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+}
+
+.alignerItem {
+  background: #000;
+  color: red;
+  flex: 0.33;
+  align-items: center;
+  justify-content: center;
+}
