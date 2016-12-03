@@ -32,6 +32,8 @@ const wpc = {
       ],
       include: sourceDir
     }, {
+      test: /.*\.(gif|png|jpe?g|svg)$/i, loaders: ['url-loader?limit=30720000']
+    }, {
       test: /\.css$/,
       loaders: [
         'style-loader?sourceMap',

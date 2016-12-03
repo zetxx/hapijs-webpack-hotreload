@@ -5,6 +5,7 @@ export class Main extends Component {
   render () {
     return (
       <div>
+        <div className={style.main} />
         <div className={style.aligner}>
           <div className={style.alignerItem}>
             ala bala portokala
