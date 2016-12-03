@@ -4,6 +4,10 @@
   "description": "hapijs webpack hotreload example",
   "main": "server.js",
   "dependencies": {
+    "hapi": "^16.0.1",
+    "inert": "^4.0.3"
+  },
+  "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-polyfill": "^6.16.0",
@@ -13,11 +17,11 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.18.0",
     "file-loader": "^0.9.0",
-    "hapi": "^15.2.0",
     "hapi-webpack-plugin": "^1.3.0",
     "immutable": "^3.8.1",
-    "inert": "^4.0.2",
     "jsx-loader": "^0.13.2",
+    "postcss": "^5.2.6",
+    "postcss-cssnext": "^2.9.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-hot-loader": "3.0.0-beta.6",

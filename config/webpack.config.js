@@ -31,6 +31,13 @@ const wpc = {
         'babel-loader'
       ],
       include: sourceDir
+    }, {
+      test: /\.css$/,
+      loaders: [
+        'style-loader',
+        'css-loader?importLoaders=1',
+        'postcss-loader'
+      ]
     }]
   }
 }
