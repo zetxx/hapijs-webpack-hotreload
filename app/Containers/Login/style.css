@@ -1,0 +1,39 @@
+.aligner {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+}
+
+.alignerItem {
+  background: #000;
+  color: red;
+  flex: 0.33;
+  align-items: center;
+  justify-content: center;
+}
+
+.init {
+  opacity: 0;
+  animation: show 3s linear forwards;
+}
+.hiding {
+  opacity: 1;
+  animation: hide 3s linear forwards;
+}
+
+.showing {
+  opacity: 0;
+  animation: show 3s linear forwards;
+}
+
+@keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}

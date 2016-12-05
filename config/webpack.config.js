@@ -50,8 +50,6 @@ const assets = {
   publicPath: wpc.output.publicPath,
   noInfo: true,
   watchOptions: {
-    aggregateTimeout: 300,
-    poll: true,
     watch: true
   },
   stats: {
